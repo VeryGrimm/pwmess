@@ -44,3 +44,5 @@
 -constants are declared like this: define("MAX_WIDTH", 980);
 -constants can't be changed in any way after being defined
 
+-operators all seem to be like c/java
+
