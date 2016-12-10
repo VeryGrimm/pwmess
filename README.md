@@ -34,7 +34,7 @@
 
 -booleans are used how you would expect, and declared like this: $result1 = true;
 
--if/then conditions use c/java syntax
+-if/then conditions use c/java syntax.  else and elseif also.
 
 -nulls are declared like this: $var1 = null;
 -see null.php for example of functions for dealling with nulls
@@ -43,3 +43,4 @@
 
 -constants are declared like this: define("MAX_WIDTH", 980);
 -constants can't be changed in any way after being defined
+
