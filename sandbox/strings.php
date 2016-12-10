@@ -8,22 +8,22 @@
 	<body>
 	<?php
 	
-		echo "Hello World!<br />";
-		echo 'Hello World!<br />';
-		
-		$greeting = "Hello";
-		$target = "World";
-		$phrase = $greeting . " " . $target;
-		echo $phrase;
+	echo "Hello World<br />";
+	echo 'Hello World<br />';
 
-		?>
+	$greeting = "Hello";
+	$target = "World";
+	$phrase = $greeting . " " . $target;
+	echo $phrase;
+	?>
 	<br />
 	<?php
 	
-		echo "$phrase Again<br />"; // sees the dollar sign and knows that that is a variable and replaces the string value
-		echo '$phrase Again<br />'; // doesn't work with single quotes.  takes it all as a literal string
-		echo "{$phrase}Again<br />"; // if there is no space between the variable and the next text, curly braces tells php what is a variable
+	echo "$phrase Again<br />";
+	echo '$phrase Again<br />';
+	echo "{$phrase}Again<br />";
 	
 	?>
+
 	</body>
 </html>

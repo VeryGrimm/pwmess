@@ -8,13 +8,13 @@
 	<body>
 	<?php
 
-		$first = "The quick brown fox";
-		$second = " jumped over the lazy dog.";
-		
-		$third = $first;
-		$third .= $second;
-		echo $third;
+	$first = "The quick brown fox";
+	$second = " jumped over the lazy dog.";
 	
+	$third = $first;
+	$third .= $second;
+	echo $third;
+
 	?>
 	<br />
 	Lowercase: <?php echo strtolower($third); ?><br />
@@ -28,7 +28,7 @@
 	Replace by string: <?php echo str_replace("quick", "super-fast", $third); ?><br />
 	<br />
 	Repeat: <?php echo str_repeat($third, 2); ?><br />
-	Make Substring: <?php echo substr($third, 5, 10); ?><br />
+	Make substring: <?php echo substr($third, 5, 10); ?><br />
 	Find position: <?php echo strpos($third, "brown"); ?><br />
 	Find character: <?php echo strchr($third, "z"); ?><br />
 	

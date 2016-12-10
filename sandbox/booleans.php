@@ -3,7 +3,7 @@
 
 <html lang="en">
 	<head>
-		<title>Array Functions</title>
+		<title>Booleans</title>
 	</head>
 	<body>
 
@@ -24,6 +24,5 @@
 			}
 		
 		?>
-
 	</body>
 </html>

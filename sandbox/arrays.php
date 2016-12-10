@@ -22,7 +22,7 @@
 		
 		<?php $mixed[2] = "cat"; ?>
 		<?php $mixed[4] = "mouse"; ?>
-		<?php $mixed[] = "horse"; // not specifying an index appends to end ?>
+		<?php $mixed[] = "horse"; ?>
 		
 		<pre>
 		<?php echo print_r($mixed); ?>

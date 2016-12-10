@@ -3,7 +3,7 @@
 
 <html lang="en">
 	<head>
-		<title>Type Juggling and Type Casting</title>
+		<title>Constants</title>
 	</head>
 	<body>
 
@@ -15,7 +15,7 @@
 		?>
 		<br />
 		<?php // can't change the value
-		//MAX_WIDTH = MAX_WIDTH + 1;
+		//MAX_WIDTH = MAX_WIDTH + 1
 		//echo MAX_WIDTH;
 		?>
 
