@@ -10,6 +10,8 @@
 -multi line comment operators are /* */
 
 -variables have a dollar sign in front of them.  ex: $var1
+-variables are not accessible outside of their scope unless the global keyword is used.  ex: global $bar;
+
 -each php line has to have a semicolon after it ex: $var1 = 10;
 
 -strings are specified with "" or ''
