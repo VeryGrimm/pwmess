@@ -63,6 +63,8 @@
 -array pointer functions are next, prev, reset, end and current.
 
 -functions are declared like javascript, with arguments not typed.  ex: function say_hello_to($word) { }
+-returning values from functions works like c/java.  ex: return $greeting . " " . $target . $punct . "<br />";
+
 
 
 
