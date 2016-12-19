@@ -4,6 +4,7 @@
 -php open and clase tags are <?php ?>
 
 -echo outputs whatever the variable is as html.  ex: <?php echo "Hello World!"; ?><br />
+-print_r() will pretty print an array or json (or maybe even html?)
 
 -single line comment operators are // or #
 -multi line comment operators are /* */
@@ -25,7 +26,6 @@
 -see floats.php for float manipulation functions
 
 -arrays can be mixed types and can be declared like this: $mixed = array(6, "fox", "dog", array("x", "y", "z")); or $array = [1,2,3];
--print_r() will pretty print an array or json (or maybe even html?)
 
 -associative arrays are ways to make key/value pairs and are declared like this: $assoc = array("first_name" => "Kevin", "last_name" => "Skoglund");
 -and gotten like this: echo $assoc["first_name"] . " " . $assoc["last_name"];
@@ -45,4 +45,8 @@
 -constants can't be changed in any way after being defined
 
 -operators all seem to be like c/java
+
+-switch statements seem to have the same syntax as c/java
+
+-while loops have c/java like syntax
 
