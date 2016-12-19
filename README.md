@@ -50,3 +50,5 @@
 
 -while loops have c/java like syntax
 
+-for loops have c/java like syntax
+
