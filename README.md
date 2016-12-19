@@ -52,3 +52,6 @@
 
 -for loops have c/java like syntax
 
+-foreach loops use the as operator.  for example, if $ages is an array, each element is assigned to $age : foreach($ages as $age) { }
+-foreach loops can also use the => operator so that you can access both the key and the value in a associative array.  ex: foreach($person as $key => $value) { }
+
