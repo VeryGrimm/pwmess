@@ -57,5 +57,7 @@
 
 -continue works like it does in c/java, except that it's possible to give it an argument like continue(2) which will jump up to the loop outside of the current one and continue from there
 
+-break works similarly to continue, in that while it works like break does in c/java, an argument can be given to say which loop to break.  ex: break(2)
+
 
 
