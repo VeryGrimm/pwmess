@@ -55,3 +55,7 @@
 -foreach loops use the as operator.  for example, if $ages is an array, each element is assigned to $age : foreach($ages as $age) { }
 -foreach loops can also use the => operator so that you can access both the key and the value in a associative array.  ex: foreach($person as $key => $value) { }
 
+-continue works like it does in c/java, except that it's possible to give it an argument like continue(2) which will jump up to the loop outside of the current one and continue from there
+
+
+
