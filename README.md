@@ -62,5 +62,7 @@
 -there are array pointer functions that are used to move through an array like a recordset.  current($ary) returns the current position.  but after next($ary), current($ary) will return the next one.
 -array pointer functions are next, prev, reset, end and current.
 
+-functions are declared like javascript, with arguments not typed.  ex: function say_hello_to($word) { }
+
 
 
