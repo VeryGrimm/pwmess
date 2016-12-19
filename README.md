@@ -59,5 +59,8 @@
 
 -break works similarly to continue, in that while it works like break does in c/java, an argument can be given to say which loop to break.  ex: break(2)
 
+-there are array pointer functions that are used to move through an array like a recordset.  current($ary) returns the current position.  but after next($ary), current($ary) will return the next one.
+-array pointer functions are next, prev, reset, end and current.
+
 
 
