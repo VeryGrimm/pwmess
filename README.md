@@ -64,7 +64,7 @@
 
 -functions are declared like javascript, with arguments not typed.  ex: function say_hello_to($word) { }
 -returning values from functions works like c/java.  ex: return $greeting . " " . $target . $punct . "<br />";
-
+-returning multiple values has to be done with arrays.  there's a function called list that can unpack an array into individual variables.  ex: list($add_result, $subt_result) = add_subt(20,7);
 
 
 
