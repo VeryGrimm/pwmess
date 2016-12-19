@@ -70,5 +70,8 @@
 -default values for function arguments can be specified.  ex: function paint($room="office",$color="red")
 -if an argument is omitted, then the default will be used (null doesn't count as omission)
 
-
-
+-there doesn't seem to be a way to step through your code in php, but there are some helpful functions for debugging: var_dump(), get_defined_vars(), debug_backtrace()
+-var_dump() outputs variable type and value
+-get_defined_vars() outputs an array of defined variables
+-debug_backtrace() shows backtrace of functions that have been called
+-there are some 3rd party helpers for debugging: Xdebug, DBG, and FirePHP
