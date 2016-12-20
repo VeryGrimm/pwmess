@@ -84,4 +84,9 @@
 -htmlspecialchars() can be used to encode html with reserved characters output via php display correctly
 -htmlentities() will convert all symbols to escape characters that can be
 
+-include() is the function used to include other php files. ex: <?php include("included_functions.php"); ?>
+-require() is like include() but will throw an error if the file isn't there.
+-include_once() is like include(), but will ignore it we attempt to include the same file that we did earlier
+-require_once() is like include_once() but will throw an error if the file doesn't exist
+
 
