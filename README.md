@@ -78,3 +78,7 @@
 
 -$_GET is what is called a "super global variable", and it is set up by php.  You can use it to retrieve get parameters.  ex: $id = $_GET['id'];
 
+-A urlencode() function is used to encode get values
+-rawurlencode() does the same thing as urlencode(), but makes spaces %20 instead of +.  This is generally used for the path portion of the url (before any arguments are passed)
+
+
