@@ -91,5 +91,6 @@
 
 -header() can be used to modify html headers.  this must be done first in the file.  ex: header("HTTP 1.1/ 404 Not Found");
 -header() can also be used to redirect a page.  be sure to use the exit command afterwards so that nothing else is output.  ex: header("Location: " . $new_location); exit;
+-ob_start() and ob_end_flush() are functions for output buffering.  Anything between those will be buffered.  With this, it is possible to edit headers after something else came before it
 
 
