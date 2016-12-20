@@ -89,4 +89,6 @@
 -include_once() is like include(), but will ignore it we attempt to include the same file that we did earlier
 -require_once() is like include_once() but will throw an error if the file doesn't exist
 
+-header() can be used to modify html headers.  this must be done first in the file.  ex: header("HTTP 1.1/ 404 Not Found");
+
 
