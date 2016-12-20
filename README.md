@@ -81,4 +81,7 @@
 -A urlencode() function is used to encode get values
 -rawurlencode() does the same thing as urlencode(), but makes spaces %20 instead of +.  This is generally used for the path portion of the url (before any arguments are passed)
 
+-htmlspecialchars() can be used to encode html with reserved characters output via php display correctly
+-htmlentities() will convert all symbols to escape characters that can be
+
 
