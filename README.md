@@ -75,3 +75,6 @@
 -get_defined_vars() outputs an array of defined variables
 -debug_backtrace() shows backtrace of functions that have been called
 -there are some 3rd party helpers for debugging: Xdebug, DBG, and FirePHP
+
+-$_GET is what is called a "super global variable", and it is set up by php.  You can use it to retrieve get parameters.  ex: $id = $_GET['id'];
+
