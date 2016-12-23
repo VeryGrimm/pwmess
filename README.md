@@ -78,6 +78,9 @@
 
 -$_GET is what is called a "super global variable", and it is set up by php.  You can use it to retrieve get parameters.  ex: $id = $_GET['id'];
 
+-$_POST is the same thing as $_GET, but for form post parameters that were sent.
+-isset() can be used to check to make sure the post parameters were sent so that you don't error out when trying to get a nonexistent one.
+
 -A urlencode() function is used to encode get values
 -rawurlencode() does the same thing as urlencode(), but makes spaces %20 instead of +.  This is generally used for the path portion of the url (before any arguments are passed)
 

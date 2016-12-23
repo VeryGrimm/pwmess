@@ -2,36 +2,36 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html lang="en">
-  <head>
-    <title>Functions: Defining</title>
-  </head>
-  <body>
+	<head>
+		<title>Functions: Defining</title>
+	</head>
+	<body>
 
-    <?php
-    
-      function say_hello() {
-        echo "Hello World!<br />";
-      }
-    
-      say_hello();
-      
-      function say_hello_to($word) {
-        echo "Hello {$word}!<br />";
-      }
+		<?php
+		
+			function say_hello() {
+				echo "Hello World!<br />";
+			}
+		
+			say_hello();
+			
+			function say_hello_to($word) {
+				echo "Hello {$word}!<br />";
+			}
 
-      say_hello_to("World");
-      say_hello_to("Everyone");
-      
-      say_hello_loudly();
-      
-      function say_hello_loudly() {
-        echo "HELLO WORLD!<br />";
-      }
+			say_hello_to("World");
+			say_hello_to("Everyone");
+			
+			say_hello_loudly();
+			
+			function say_hello_loudly() {
+				echo "HELLO WORLD!<br />";
+			}
 
-      // function say_hello_loudly() {
-      //   echo "We can't redefine a function.";
-      // }
-      
-    ?>
-  </body>
+			// function say_hello_loudly() {
+			// 	echo "We can't redefine a function.";
+			// }
+			
+		?>
+	</body>
 </html>
