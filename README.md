@@ -120,10 +120,16 @@
 -SHOW GRANTS FOR 'username'@'localhost';
 -SOURCE path_file.sql; // this runs the .sql file.  don't include this comment.
 
--there are three database api's in php.  mysql, mysqli and pho
+-there are three database api's in php.  mysql, mysqli and pho.  pho works on multipe databases
 -these examples are for mysqli
 -connect to the database like this: $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 -mysqli_connect_errno() will return a number if a connection error happened
 -mysqli_connect_error() will return the error message
 -die() is a function that will stop all php from processing.  ex: die("Database connection failed: " . mysqli_connect_error() . " (" . mysqli_connect_errno() . ")" );
 -the database connection should be closed like this: mysqli_close($connection);
+-run a query against the database like this: $result = mysqli_query($connection, $query);
+-test that it ran correctly like this: if (!$result) { die("Database query failed."); }
+-the resultset can be iterated through. this returns an integer indexed array for the row values. ex: while($row = mysqli_fetch_row($result)) { }
+-a dirty way to display the data returned is: var_dump($row);
+-release the resultset like this: mysqli_free_result($result);
+
