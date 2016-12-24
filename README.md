@@ -88,6 +88,7 @@
 -$_SESSION is the same thing as $_GET, but for session parameters that were set.
 -sessions are not limited in size like cookies
 -session_start() gets the session rolling, and should be placed at the start of the page.  the id will automatically be stored in a cookie.
+-session values are just set like this: $_SESSION["first_name"] = "Kevin";
 
 -isset() can be used to check to make sure the get, post and cookie parameters were sent so that you don't error out when trying to get a nonexistent one.
 
@@ -108,3 +109,21 @@
 
 -the operator === Returns true if $x is equal to $y, and they are of the same type
 -the operator !== is the not equal version of ===
+
+-the MySQL console can be accessed via the wampserver icon in the system tray.
+-useful commands to know are:
+-SHOW DATABASES;
+-CREATE DATABASE db_name;
+-USE db_name;
+-DROP DATABASE db_name;
+-GRANT ALL PRIVILEGES ON db_name.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+-SHOW GRANTS FOR 'username'@'localhost';
+-SOURCE path_file.sql; // this runs the .sql file.  don't include this comment.
+
+-there are three database api's in php.  mysql, mysqli and pho
+-these examples are for mysqli
+-connect to the database like this: $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+-mysqli_connect_errno() will return a number if a connection error happened
+-mysqli_connect_error() will return the error message
+-die() is a function that will stop all php from processing.  ex: die("Database connection failed: " . mysqli_connect_error() . " (" . mysqli_connect_errno() . ")" );
+-the database connection should be closed like this: mysqli_close($connection);
