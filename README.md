@@ -135,6 +135,7 @@
 -release the resultset like this: mysqli_free_result($result);
 -the number of affected rows can be returned like this: if ($result && mysqli_affected_rows($connection) == 1) { }
 -remember that php will replace variable tokens in a string with this syntax: $query .= "menu_name = '{$menu_name}', ";
+-sql injection can be defended against using the mysqli_real_escape_string($connection, $string) function.  it basically adds escape characters for things like single quotes.
 
 
 
