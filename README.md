@@ -79,7 +79,17 @@
 -$_GET is what is called a "super global variable", and it is set up by php.  You can use it to retrieve get parameters.  ex: $id = $_GET['id'];
 
 -$_POST is the same thing as $_GET, but for form post parameters that were sent.
--isset() can be used to check to make sure the post parameters were sent so that you don't error out when trying to get a nonexistent one.
+
+-$_COOKIE is the same thing as $_GET, but for cookie parameters that were set.
+-setcookie($name, $value, $expire); is the function used to set the cookie values.  expire is seconds and can be set like this: $expire = time() + (60*60*24*7); // add seconds
+-cookie values can be unset by setting the value to null (and as an additional best practice, set the expire to a date in the past.  ex: setcookie($name, null, time() - 3600);
+-cookies can only store 4k characters.  sessions are generally better since they aren't limited in size.  when a session is created, the id is stored in a cookie.
+
+-$_SESSION is the same thing as $_GET, but for session parameters that were set.
+-sessions are not limited in size like cookies
+-session_start() gets the session rolling, and should be placed at the start of the page.  the id will automatically be stored in a cookie.
+
+-isset() can be used to check to make sure the get, post and cookie parameters were sent so that you don't error out when trying to get a nonexistent one.
 
 -A urlencode() function is used to encode get values
 -rawurlencode() does the same thing as urlencode(), but makes spaces %20 instead of +.  This is generally used for the path portion of the url (before any arguments are passed)
