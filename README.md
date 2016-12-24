@@ -130,6 +130,11 @@
 -run a query against the database like this: $result = mysqli_query($connection, $query);
 -test that it ran correctly like this: if (!$result) { die("Database query failed."); }
 -the resultset can be iterated through. this returns an integer indexed array for the row values. ex: while($row = mysqli_fetch_row($result)) { }
+-if you use mysqli_fetch_assoc($result)), the indexes will be the column names instead.
 -a dirty way to display the data returned is: var_dump($row);
 -release the resultset like this: mysqli_free_result($result);
+-the number of affected rows can be returned like this: if ($result && mysqli_affected_rows($connection) == 1) { }
+-remember that php will replace variable tokens in a string with this syntax: $query .= "menu_name = '{$menu_name}', ";
+
+
 

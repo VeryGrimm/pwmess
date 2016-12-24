@@ -14,15 +14,24 @@
   }
 ?>
 <?php
+	// Often these are form values in $_POST
+	$id = 5;
+	
 	// 2. Perform database query
-	$query  = "SELECT * ";
-	$query .= "FROM subjects ";
-	$query .= "WHERE visible = 1 ";
-	$query .= "ORDER BY position ASC";
+	$query  = "DELETE FROM subjects ";
+	$query .= "WHERE id = {$id} ";
+	$query .= "LIMIT 1";
+
 	$result = mysqli_query($connection, $query);
-	// Test if there was a query error
-	if (!$result) {
-		die("Database query failed.");
+
+	if ($result && mysqli_affected_rows($connection) == 1) {
+		// Success
+		// redirect_to("somepage.php");
+		echo "Success!";
+	} else {
+		// Failure
+		// $message = "Subject delete failed";
+		die("Database query failed. " . mysqli_error($connection));
 	}
 ?>
 
@@ -35,22 +44,6 @@
 	</head>
 	<body>
 		
-		<ul>
-		<?php
-			// 3. Use returned data (if any)
-			while($subject = mysqli_fetch_assoc($result)) {
-				// output data from each row
-		?>
-				<li><?php echo $subject["menu_name"] . " (" . $subject["id"] . ")"; ?></li>
-	  <?php
-			}
-		?>
-		</ul>
-		
-		<?php
-		  // 4. Release returned data
-		  mysqli_free_result($result);
-		?>
 	</body>
 </html>
 
