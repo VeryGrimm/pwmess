@@ -137,5 +137,9 @@
 -remember that php will replace variable tokens in a string with this syntax: $query .= "menu_name = '{$menu_name}', ";
 -sql injection can be defended against using the mysqli_real_escape_string($connection, $string) function.  it basically adds escape characters for things like single quotes.
 
+-hash() creates a hash value based on the supported algorythm passed in.  ex: hash('sha1', $password);
+-crypt() is used for encrypting passwords.  ex: crypt($password, $salt); // salt is a unique string that is hashed and stored with the user record. then it is added to the password when comparing.
+-see manage_admins.php for example
+
 
 
